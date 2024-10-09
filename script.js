@@ -1,5 +1,5 @@
 window.addEventListener("load",buttons);
-var Sum, Average, Period_Eight_Grade, Period_Eight_Name, Full_Name;
+var Sum, Average, Period_Eight_Grade, Period_Eight_Name, Full_Name,Gpa,Grade ;
 
 function buttons()
 {
@@ -29,12 +29,41 @@ function Get_Elements()
     var Period_Seven_Grade = parseFloat(document.getElementById("txtprdsevengrade").value);
     var Period_Eight_Name = document.getElementById("txtprdeightname").value;
     var Period_Eight_Grade = parseFloat(document.getElementById("txtprdeightgrade").value);
-    Calculate_Average(Period_One_Grade, Period_Two_Grade, Period_Three_Grade, Period_Four_Grade, Period_Five_Grade, Period_Six_Grade, Period_Seven_Grade, Period_Eight_Grade);
-}
-
-function Calculate_Average(Period_One_Grade, Period_Two_Grade, Period_Three_Grade, Period_Four_Grade, Period_Five_Grade, Period_Six_Grade, Period_Seven_Grade, Period_Eight_Grade)
-{
+  
     var Sum = Period_One_Grade + Period_Two_Grade + Period_Three_Grade + Period_Four_Grade + Period_Five_Grade + Period_Six_Grade + Period_Seven_Grade + Period_Eight_Grade;
-    var Average = Sum / 8
+   	Average = Sum / 8
     document.getElementById("txtgrade").value = Average;
+    
+    gpa()
+}
+function gpa()
+{
+	Gpa = Average/25; 
+	document.getElementById("txtgpa").value = Gpa;
+	LetterGrade()
+}
+function LetterGrade()
+{
+	switch(Average)
+	{
+		case (parseInt(Average) >= 90): 
+			Grade = "A";
+			break;
+		case(parseInt(Average) >= 80):
+			Grade = "B";
+			break;
+		case(parseInt(Average) >= 70):
+			Grade = "C";
+			break; 
+		case(parseInt(Average) >= 60):
+			Grade = "D";
+			break;
+		case(parseInt(Average) < 60): 
+			Grade = "F";
+			break;
+		default: 
+			Grade = "Nothing"
+			break;
+	}
+	document.getElementById("txtlettergrade").value = Grade;
 }
