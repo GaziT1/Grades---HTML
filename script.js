@@ -1,6 +1,15 @@
-window.addEventListener("load", addListener);
+window.addEventListener("load",buttons);
+var sum, average 
 
-function addListener()
+function buttons()
 {
-	document.getElementById("")
+	document.getElementById("txtgrade").disabled = true;
+	document.getElementById("txtgpa").disabled = true;
+	document.getElementById("txtlettergrade").disabled = true;
+	document.getElementById("btnsubmit").addEventListener("click",getelements);
+	
+}
+function getelements()
+{
+	
 }
