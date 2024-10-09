@@ -1,6 +1,23 @@
+button[id = "btnsubmit"]
+{
+		height: 30px;
+		width: 80px;
+		font-family: comic sans ms; 
+		font-size: 100%;
+}
+label
+{
+		font-family: comic sans ms; 
+		font-size: 100%;
+		color: black;
+}
+input
+{
+		font-family: comic sans ms; 
+		font-size: 95%; 
+		color: black;
+}
 body 
 {
-		background-color: Teal;
-		font-family: Comic sans ms;
-		color:black; 
+		background-color: #8080ff;
 }
