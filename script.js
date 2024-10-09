@@ -44,21 +44,22 @@ function gpa()
 }
 function LetterGrade()
 {
-	switch(Average)
+	var Letter = Average;
+	switch(true)
 	{
-		case (parseInt(Average) >= 90): 
+		case(Letter >= 90): 
 			Grade = "A";
 			break;
-		case(parseInt(Average) >= 80):
+		case(Letter >= 80):
 			Grade = "B";
 			break;
-		case(parseInt(Average) >= 70):
+		case(Letter >= 70):
 			Grade = "C";
 			break; 
-		case(parseInt(Average) >= 60):
+		case(Letter>= 60):
 			Grade = "D";
 			break;
-		case(parseInt(Average) < 60): 
+		case(Letter < 60): 
 			Grade = "F";
 			break;
 		default: 
