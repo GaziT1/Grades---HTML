@@ -33,13 +33,7 @@ function Get_Elements()
     var Sum = Period_One_Grade + Period_Two_Grade + Period_Three_Grade + Period_Four_Grade + Period_Five_Grade + Period_Six_Grade + Period_Seven_Grade + Period_Eight_Grade;
    	Average = Sum / 8
     document.getElementById("txtgrade").value = Average;
-    Check()
-    gpa()
-}
-
-function Check()
-{
-	CheckInfo(Full_Name)
+    	CheckInfo(Full_Name)
 	CheckInfo(OSIS_Num)
 	CheckInfo(Period_One_Name)
 	CheckInfo(Period_One_Grade)
@@ -57,6 +51,7 @@ function Check()
 	CheckInfo(Period_Seven_Grade)
 	CheckInfo(Period_Eight_Name)
 	CheckInfo( Period_Eight_Grade)	
+    gpa()
 }
 
 function CheckInfo(input)
