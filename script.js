@@ -56,7 +56,7 @@ function Get_Elements()
 
 function CheckInfo(input)
 {
-	if (input == ""):
+	if (input == "")
 	{
 		alert("All Information is not filled out!")
 	}
