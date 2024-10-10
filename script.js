@@ -11,7 +11,7 @@ function buttons()
 }
 function Get_Elements()
 {
-	let Full_Name = document.getElementById("txtfullname").value;
+    var Full_Name = document.getElementById("txtfullname").value;
     var OSIS_Num = document.getElementById("txtosis").value;
     var Period_One_Name = document.getElementById("txtprdonename").value;
     var Period_One_Grade = parseFloat(document.getElementById("txtprdonegrade").value);
