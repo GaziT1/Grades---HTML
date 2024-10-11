@@ -1,5 +1,5 @@
 window.addEventListener("load",buttons);
-var Sum, Average, Period_Eight_Grade, Period_Eight_Name, Full_Name,Gpa,Grade ;
+var Sum, Average, Period_Eight_Grade, Period_Eight_Name, Full_Name,Gpa,Grade, msg = "All Information is not filled out or incorrect value" ;
 
 function buttons()
 {
@@ -33,58 +33,58 @@ function Get_Elements()
 	switch(true)
 	{
 		case(Full_Name == ""):
-			alert("Type in a input")
+			alert(msg)
 			break;
 		case(OSIS_Num == ""):
-			alert("Type in a input")
+			alert(msg)
 			break;
 		case(Period_One_Name == ""):
-			alert("Type in a input")
+			alert(msg)
 			break;
 		case(Period_One_Grade == ""): 
-			alert("Type in a input")
+			alert(msg)
 			break;
 		case(Period_Two_Name == ""): 
-			alert("Type in a input")
+			alert(msg)
 			break; 
 		case(Period_Two_Grade == ""):
-			alert("Type in input")
+			alert(msg)
 			break;
 		case(Period_Three_Name == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;
 		case(Period_Three_Grade == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;
 		case(Period_Four_Name == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;	
 		case(Period_Four_Grade == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;	
 		case(Period_Five_Name == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;			
 		case(Period_Five_Grade == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;	
 		case(Period_Six_Name == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;
 		case(Period_Six_Grade == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;	
 		case(Period_Seven_Name == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;	
 		case(Period_Seven_Grade == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;		
 		case(Period_Eight_Name == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;	
 		case(Period_Eight_Grade == ""): 
-			alert("Type in input")
+			alert(msg)
 			break;	
 		default:
 			alert("weeeee")
