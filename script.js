@@ -11,7 +11,7 @@ function buttons()
 }
 function Get_Elements()
 {
-    var Full_Name = document.getElementById("txtfullname").value;
+	let Full_Name = document.getElementById("txtfullname").value;
     var OSIS_Num = document.getElementById("txtosis").value;
     var Period_One_Name = document.getElementById("txtprdonename").value;
     var Period_One_Grade = parseFloat(document.getElementById("txtprdonegrade").value);
@@ -33,33 +33,68 @@ function Get_Elements()
     var Sum = Period_One_Grade + Period_Two_Grade + Period_Three_Grade + Period_Four_Grade + Period_Five_Grade + Period_Six_Grade + Period_Seven_Grade + Period_Eight_Grade;
    	Average = Sum / 8
     document.getElementById("txtgrade").value = Average;
-    	CheckInfo(Full_Name);
-	CheckInfo(OSIS_Num);
-	CheckInfo(Period_One_Name);
-	CheckInfo(Period_One_Grade);
-	CheckInfo(Period_Two_Name);
-	CheckInfo(Period_Two_Grade);
-	CheckInfo(Period_Three_Name);
-	CheckInfo(Period_Three_Grade);
-	CheckInfo(Period_Four_Name);
-	CheckInfo(Period_Four_Grade);
-	CheckInfo(Period_Five_Name);
-	CheckInfo(Period_Five_Grade);
-	CheckInfo(Period_Six_Name);
-	CheckInfo(Period_Six_Grade);
-	CheckInfo(Period_Seven_Name);
-	CheckInfo(Period_Seven_Grade);
-	CheckInfo(Period_Eight_Name);
-	CheckInfo( Period_Eight_Grade);
-    gpa()
-}
-
-function CheckInfo(input)
-{
-	if (input == "")
+	
+	switch(true)
 	{
-		alert("All Information is not filled out!")
+		case(Full_Name == ""):
+			alert("Type in a input")
+			break;
+		case(OSIS_Num == ""):
+			alert("Type in a input")
+			break;
+		case(Period_One_Name == ""):
+			alert("Type in a input")
+			break;
+		case(Period_One_Grade == ""): 
+			alert("Type in a input")
+			break;
+		case(Period_Two_Name == ""): 
+			alert("Type in a input")
+			break; 
+		case(Period_Two_Grade == ""):
+			alert("Type in input")
+			break;
+		case(Period_Three_Name == ""): 
+			alert("Type in input")
+			break;
+		case(Period_Three_Grade == ""): 
+			alert("Type in input")
+			break;
+		case(Period_Four_Name == ""): 
+			alert("Type in input")
+			break;	
+		case(Period_Four_Grade == ""): 
+			alert("Type in input")
+			break;	
+		case(Period_Five_Name == ""): 
+			alert("Type in input")
+			break;			
+		case(Period_Five_Grade == ""): 
+			alert("Type in input")
+			break;	
+		case(Period_Six_Name == ""): 
+			alert("Type in input")
+			break;
+		case(Period_Six_Grade == ""): 
+			alert("Type in input")
+			break;	
+		case(Period_Seven_Name == ""): 
+			alert("Type in input")
+			break;	
+		case(Period_Seven_Grade == ""): 
+			alert("Type in input")
+			break;		
+		case(Period_Eight_Name == ""): 
+			alert("Type in input")
+			break;	
+		case(Period_Eight_Grade == ""): 
+			alert("Type in input")
+			break;	
+		default:
+			gpa();
 	}
+	
+    gpa()
 }
 
 function gpa()
