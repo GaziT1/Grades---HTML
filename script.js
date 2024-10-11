@@ -1,5 +1,5 @@
 window.addEventListener("load",buttons);
-var Sum, Average, Period_Eight_Grade, Period_Eight_Name, Full_Name,Gpa,Grade, msg = "All Information is not filled out or incorrect value" ;
+var Sum, Average, Period_Eight_Grade, Period_Eight_Name, Full_Name,Gpa,Grade ;
 
 function buttons()
 {
@@ -33,67 +33,65 @@ function Get_Elements()
 	switch(true)
 	{
 		case(Full_Name == ""):
-			alert(msg)
+			alert("Type in a input")
 			break;
 		case(OSIS_Num == ""):
-			alert(msg)
+			alert("Type in a input")
 			break;
 		case(Period_One_Name == ""):
-			alert(msg)
+			alert("Type in a input")
 			break;
 		case(Period_One_Grade == ""): 
-			alert(msg)
+			alert("Type in a input")
 			break;
 		case(Period_Two_Name == ""): 
-			alert(msg)
+			alert("Type in a input")
 			break; 
 		case(Period_Two_Grade == ""):
-			alert(msg)
+			alert("Type in input")
 			break;
 		case(Period_Three_Name == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;
 		case(Period_Three_Grade == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;
 		case(Period_Four_Name == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;	
 		case(Period_Four_Grade == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;	
 		case(Period_Five_Name == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;			
 		case(Period_Five_Grade == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;	
 		case(Period_Six_Name == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;
 		case(Period_Six_Grade == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;	
 		case(Period_Seven_Name == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;	
 		case(Period_Seven_Grade == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;		
 		case(Period_Eight_Name == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;	
 		case(Period_Eight_Grade == ""): 
-			alert(msg)
+			alert("Type in input")
 			break;	
 		default:
-			alert("weeeee")
+			var Sum = parseFloat(Period_One_Grade) + parseFloat(Period_Two_Grade) + parseFloat(Period_Three_Grade) + parseFloat(Period_Four_Grade) 
+					 + parseFloat(Period_Five_Grade) + parseFloat(Period_Six_Grade) + parseFloat(Period_Seven_Grade) + parseFloat(Period_Eight_Grade);
+			Average = Sum / 8
+			document.getElementById("txtgrade").value = Average;
 	}
-	var Sum = parseFloat(Period_One_Grade) + parseFloat(Period_Two_Grade) + parseFloat(Period_Three_Grade) + parseFloat(Period_Four_Grade) 
-			 + parseFloat(Period_Five_Grade) + parseFloat(Period_Six_Grade) + parseFloat(Period_Seven_Grade) + parseFloat(Period_Eight_Grade);
-	Average = Sum / 8
-	document.getElementById("txtgrade").value = Average;
-	
     gpa()
 }
 
