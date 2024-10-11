@@ -14,25 +14,21 @@ function Get_Elements()
 	let Full_Name = document.getElementById("txtfullname").value;
     var OSIS_Num = document.getElementById("txtosis").value;
     var Period_One_Name = document.getElementById("txtprdonename").value;
-    var Period_One_Grade = parseFloat(document.getElementById("txtprdonegrade").value);
+    var Period_One_Grade = document.getElementById("txtprdonegrade").value;
     var Period_Two_Name = document.getElementById("txtprdtwoname").value;
-    var Period_Two_Grade = parseFloat(document.getElementById("txtprdtwograde").value);
+    var Period_Two_Grade = document.getElementById("txtprdtwograde").value;
     var Period_Three_Name = document.getElementById("txtprdthreename").value;
-    var Period_Three_Grade = parseFloat(document.getElementById("txtprdthreegrade").value);
+    var Period_Three_Grade = document.getElementById("txtprdthreegrade").value;
     var Period_Four_Name = document.getElementById("txtprdfourname").value;
-    var Period_Four_Grade = parseFloat(document.getElementById("txtprdfourgrade").value);
+    var Period_Four_Grade = document.getElementById("txtprdfourgrade").value;
     var Period_Five_Name = document.getElementById("txtprdfivename").value;
-    var Period_Five_Grade = parseFloat(document.getElementById("txtprdfivegrade").value);
+    var Period_Five_Grade = document.getElementById("txtprdfivegrade").value;
     var Period_Six_Name = document.getElementById("txtprdsixname").value;
-    var Period_Six_Grade = parseFloat(document.getElementById("txtprdsixgrade").value);
+    var Period_Six_Grade = document.getElementById("txtprdsixgrade").value;
     var Period_Seven_Name = document.getElementById("txtprdsevenname").value;
-    var Period_Seven_Grade = parseFloat(document.getElementById("txtprdsevengrade").value);
+    var Period_Seven_Grade = document.getElementById("txtprdsevengrade").value;
     var Period_Eight_Name = document.getElementById("txtprdeightname").value;
-    var Period_Eight_Grade = parseFloat(document.getElementById("txtprdeightgrade").value);
-  
-    var Sum = Period_One_Grade + Period_Two_Grade + Period_Three_Grade + Period_Four_Grade + Period_Five_Grade + Period_Six_Grade + Period_Seven_Grade + Period_Eight_Grade;
-   	Average = Sum / 8
-    document.getElementById("txtgrade").value = Average;
+    var Period_Eight_Grade = document.getElementById("txtprdeightgrade").value;
 	
 	switch(true)
 	{
@@ -91,8 +87,12 @@ function Get_Elements()
 			alert("Type in input")
 			break;	
 		default:
-			gpa();
+			alert("weeeee")
 	}
+	var Sum = parseFloat(Period_One_Grade) + parseFloat(Period_Two_Grade) + parseFloat(Period_Three_Grade) + parseFloat(Period_Four_Grade) 
+			 + parseFloat(Period_Five_Grade) + parseFloat(Period_Six_Grade) + parseFloat(Period_Seven_Grade) + parseFloat(Period_Eight_Grade);
+	Average = Sum / 8
+	document.getElementById("txtgrade").value = Average;
 	
     gpa()
 }
