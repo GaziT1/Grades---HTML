@@ -5,18 +5,33 @@ button[id = "btnsubmit"]
 		font-family: comic sans ms; 
 		font-size: 100%;
 }
+
 label
 {
 		font-family: comic sans ms; 
 		font-size: 100%;
 		color: black;
 }
+
+#Course_One_Name,#Grade_One
+{
+		display: inline-margin;
+		margin-right: 10px;
+}
+#Course_One_Content,#Grade_One_Content,#Course_Two_Content,#Grade_Two_Content,#Course_Three_Content,#Grade_Three_Content,#Course_Four_Content,
+#Grade_Four_Content,#Course_Five_Content,#Grade_Five_Content,#Course_Six_Content,#Grade_Six_Content,#Course_Seven_Content,#Grade_Seven_Content,#Course_Eight_Content,
+#Grade_Eight_Content
+{
+	margin-right: 25px;
+}
+
 input
 {
 		font-family: comic sans ms; 
 		font-size: 95%; 
 		color: black;
 }
+
 body 
 {
 		background-color: #8080ff;
