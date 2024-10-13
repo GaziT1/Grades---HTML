@@ -41,56 +41,75 @@ function Get_Elements()
 		case(Period_One_Name == ""):
 			alert("Type in a input")
 			break;
-		case(Period_One_Grade == ""): 
-			alert("Type in a input")
+		case(Period_One_Grade == "" ||Period_One_Grade > 100 ): 
+			alert("Type in a correct input")
 			break;
 		case(Period_Two_Name == ""): 
 			alert("Type in a input")
 			break; 
-		case(Period_Two_Grade == ""):
-			alert("Type in input")
+		case(Period_Two_Grade == "" || Period_Two_Grade > 100 ):
+			alert("Type in a correct input")
 			break;
 		case(Period_Three_Name == ""): 
 			alert("Type in input")
 			break;
-		case(Period_Three_Grade == ""): 
-			alert("Type in input")
+		case(Period_Three_Grade == "" || Period_Three_Grade > 100): 
+			alert("Type in a correct input")
 			break;
-		case(Period_Four_Name == ""): 
+		case(Period_Four_Name == "" ): 
 			alert("Type in input")
 			break;	
-		case(Period_Four_Grade == ""): 
-			alert("Type in input")
+		case(Period_Four_Grade == "" || Period_Four_Grade > 100): 
+			alert("Type in a correct input")
 			break;	
 		case(Period_Five_Name == ""): 
 			alert("Type in input")
 			break;			
-		case(Period_Five_Grade == ""): 
-			alert("Type in input")
+		case(Period_Five_Grade == "" || Period_Five_Grade > 100): 
+			alert("Type in a correct input")
 			break;	
 		case(Period_Six_Name == ""): 
 			alert("Type in input")
 			break;
-		case(Period_Six_Grade == ""): 
-			alert("Type in input")
+		case(Period_Six_Grade == "" || Period_Six_Grade > 100): 
+			alert("Type in a correct input")
 			break;	
 		case(Period_Seven_Name == ""): 
 			alert("Type in input")
 			break;	
-		case(Period_Seven_Grade == ""): 
-			alert("Type in input")
+		case(Period_Seven_Grade == "" || Period_Seven_Grade > 100): 
+			alert("Type in a correct input")
 			break;		
 		case(Period_Eight_Name == ""): 
 			alert("Type in input")
 			break;	
-		case(Period_Eight_Grade == ""): 
-			alert("Type in input")
+		case(Period_Eight_Grade == "" || Period_Eight_Grade > 100): 
+			alert("Type in a correct input")
 			break;	
 		default:
+			document.getElementById("Full_Name_Content").textContent = Full_Name; 
+			document.getElementById("OSIS_Content").textContent = OSIS_Num; 
+			document.getElementById("Course_One_Content").textContent = Period_One_Name; 
+			document.getElementById("Grade_One_Content").textContent = Period_One_Grade; 
+			document.getElementById("Course_Two_Content").textContent = Period_Two_Name; 
+			document.getElementById("Grade_Two_Content").textContent = Period_Two_Grade; 
+			document.getElementById("Course_Three_Content").textContent = Period_Three_Name; 
+			document.getElementById("Grade_Three_Content").textContent = Period_Three_Grade; 
+			document.getElementById("Course_Four_Content").textContent = Period_Four_Name; 
+			document.getElementById("Grade_Four_Content").textContent = Period_Four_Grade; 
+			document.getElementById("Course_Five_Content").textContent = Period_Five_Name; 
+			document.getElementById("Grade_Five_Content").textContent = Period_Five_Grade; 
+			document.getElementById("Course_Six_Content").textContent = Period_Six_Name; 
+			document.getElementById("Grade_Six_Content").textContent = Period_Six_Grade; 
+			document.getElementById("Course_Seven_Content").textContent = Period_Seven_Name; 
+			document.getElementById("Grade_Seven_Content").textContent = Period_Seven_Grade; 
+			document.getElementById("Course_Eight_Content").textContent = Period_Eight_Name; 
+			document.getElementById("Grade_Eight_Content").textContent = Period_Eight_Grade; 
+
 			var Sum = parseFloat(Period_One_Grade) + parseFloat(Period_Two_Grade) + parseFloat(Period_Three_Grade) + parseFloat(Period_Four_Grade) 
-					 + parseFloat(Period_Five_Grade) + parseFloat(Period_Six_Grade) + parseFloat(Period_Seven_Grade) + parseFloat(Period_Eight_Grade);
+				+ parseFloat(Period_Five_Grade) + parseFloat(Period_Six_Grade) + parseFloat(Period_Seven_Grade) + parseFloat(Period_Eight_Grade);
 			Average = Sum / 8
-			document.getElementById("txtgrade").value = Average;
+			document.getElementById("txtgrade").textContent = Average;
 	}
     gpa()
 }
@@ -98,7 +117,7 @@ function Get_Elements()
 function gpa()
 {
 	Gpa = Average/25; 
-	document.getElementById("txtgpa").value = Gpa;
+	document.getElementById("txtgpa").textContent = Gpa;
 	LetterGrade()
 }
 function LetterGrade()
@@ -125,5 +144,5 @@ function LetterGrade()
 			Grade = "Nothing"
 			break;
 	}
-	document.getElementById("txtlettergrade").value = Grade;
+	document.getElementById("txtlettergrade").textContent = Grade;
 }
